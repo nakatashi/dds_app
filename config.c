@@ -1,19 +1,11 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
-#include <signal.h>
 #include <string.h>
 #include <sys/time.h>
 #include <math.h>
 #include "rp_dds.h"
-// gcc -o main.out main.c -lrp_dds
-// clock_gettime() is recommended.
-int interrupted = 0;
-void signal_handler(int sig)
-{
-  interrupted = 1;
-}
-// -- ch freq ampl
+
 int main(int argc, char *argv[])
 {
   RP_DDS rp_dds;
