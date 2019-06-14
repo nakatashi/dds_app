@@ -2,6 +2,7 @@ CC=gcc
 CFLAGS=-O3 -Wall
 LDFLAGS=-lrp_dds -lm
 
+all: swing_app config_app
 
 test: main.out
 
